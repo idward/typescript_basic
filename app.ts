@@ -129,3 +129,5 @@ class OnlyOne {
 
 const onlyOne = OnlyOne.getOnlyOne();
 console.log(onlyOne);
+
+console.log('----------- namespace ------------')

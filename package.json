@@ -6,7 +6,7 @@
   "scripts": {
     "start": "http-server",
     "build": "npm run clean && npm run compile",
-    "compile": "tsc --p ./tsconfig.json",
+    "compile": "tsc -p ./tsconfig.json",
     "clean": "rimraf ./dist/**"
   },
   "keywords": [],
