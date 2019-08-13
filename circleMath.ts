@@ -1,7 +1,9 @@
 namespace MyMath {
-    const PI = 3.14;
+    export class Circle {
+        static PI = 3.14;
 
-    export function calculateCircumference(diameter:number) {
-        return diameter * PI
+        static calculateCircumference(diameter:number) {
+            return diameter * Circle.PI
+        }
     }
 }

@@ -7,9 +7,16 @@
     "start": "http-server",
     "build": "npm run clean && npm run compile",
     "compile": "tsc -p ./tsconfig.json",
+    "namespace": "tsc --outFile ./dist/app.js circleMath.ts rectangleMath.ts namespace.ts",
+    "namespace:build": "npm run clean && npm run namespace",
+    "module": "tsc --module amd --outFile ./dist/app.js module.ts",
+    "module:build": "npm run clean && npm run module",
     "clean": "rimraf ./dist/**"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "systemjs": "^0.19.47"
+  }
 }
